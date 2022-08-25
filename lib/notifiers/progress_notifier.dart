@@ -7,7 +7,6 @@ class ProgressNotifier extends ValueNotifier<ProgressBarState> {
     buffered: Duration.zero,
     total: Duration.zero,
   );
-  
 }
 
 class ProgressBarState {

@@ -1,5 +1,5 @@
-name: audio_playlist_flutter_demo
-description: A demo app for showing how to handle a playlist with Just Audio
+name: audio_player
+description: A demo app for VKU school project 3rd
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -19,7 +19,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
   assets:
-    - assets/images/
-    - assets/songs/
+    - song/

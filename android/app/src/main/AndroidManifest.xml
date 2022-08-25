@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="dev.suragch.audio_playlist_flutter_demo">
    <application
-        android:label="audio_playlist_flutter_demo"
+        android:label="audio_playler_DACS3"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true" 
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

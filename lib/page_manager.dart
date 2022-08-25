@@ -4,6 +4,7 @@ import 'package:just_audio/just_audio.dart';
 import 'notifiers/play_button_notifier.dart';
 import 'notifiers/progress_notifier.dart';
 import 'notifiers/repeat_button_notifier.dart';
+
 class PageManager {
   final currentSongTitleNotifier = ValueNotifier<String>('');
   final playlistNotifier = ValueNotifier<List<String>>([]);
@@ -36,8 +37,10 @@ class PageManager {
   // TODO: set playlist
   void _setInitialPlaylist() async {
     // const prefix = 'https:url';
-    const prefix = 'assets/songs/';
-    final song1 = Uri.parse('$prefix/1.mp3');
+    const prefix = 'asset:///song';
+    final song1 = Uri.parse("$prefix/1.mp3");
+    // final song1 = Uri.parse(
+    //     'https://drive.google.com/file/d/1zEDLjR3d4aJ6ZHWVPVwp5yDiPVY2k390/view?usp=sharing');
     final song2 = Uri.parse('$prefix/2.mp3');
     final song3 = Uri.parse('$prefix/3.mp3');
     final song4 = Uri.parse('$prefix/4.mp3');
@@ -194,11 +197,11 @@ class PageManager {
     await _audioPlayer.setShuffleModeEnabled(enable);
   }
 
-  void addSong() {
-    // TODO
-  }
+  // void addSong() {
+  //   // TODO
+  // }
 
-  void removeSong() {
-    // TODO
-  }
+  // void removeSong() {
+  //   // TODO
+  // }
 }

@@ -35,7 +35,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: black,
+        backgroundColor: Color.fromARGB(255, 105, 119, 243),
         body: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
